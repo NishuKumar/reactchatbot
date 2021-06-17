@@ -1,5 +1,5 @@
 const express = require('express');
-//const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 console.log('I am running!')
 const app = express();
 console.log('I am running1!')
@@ -12,9 +12,9 @@ console.log('I am running1!')
 //require('./models/Coupons');
 
 
-//app.use(bodyParser.json());
+app.use(bodyParser.json());
 
-//require('./routes/dialogFlowRoutes')(app);
+require('./routes/dialogFlowRoutes')(app);
 //require('./routes/fulfillmentRoutes')(app);
 
 /*if (process.env.NODE_ENV === 'production') {
@@ -28,7 +28,7 @@ console.log('I am running1!')
     });
 }*/
 app.get('/', (req, res) => {
-        res.send('hello there');
+        res.send('hello Nishu');
     });
 console.log('I am running2!')
 const PORT = process.env.PORT || 5000;
