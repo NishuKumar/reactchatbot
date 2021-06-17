@@ -1,0 +1,18 @@
+{
+  "name": "reactbot",
+  "version": "1.0.0",
+  "description": "React Bot For Webpage",
+  "main": "index.js",
+   "engines": {
+    "node": "16.1.0",
+    "npm": "7.11.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nishu Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
